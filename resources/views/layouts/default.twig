@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include "theme::partials/metadata" %}
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            {% include "theme::partials/header" %}
+
+            <section>
+                {% block content %}{% endblock %}
+            </section>
+
+            {#{% include "theme::example/banner" %}#}
+            {% include "theme::example/icons" %}
+            {% include "theme::example/icons" %}
+            {% include "theme::example/posts" %}
+
+        </div>
+    </div>
+
+    {% include "theme::partials/sidebar" %}
+
+</div>
+
+{% include "theme::partials/scripts" %}
+
+</body>
+</html>

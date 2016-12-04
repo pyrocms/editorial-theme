@@ -1,0 +1,23 @@
+<!-- Menu -->
+<nav id="menu">
+
+    <header class="major">
+        <h2>Menu</h2>
+    </header>
+
+    {{ structure()|raw }}
+
+    <ul class="second">
+        <li>
+            <a href="{{ url_route('anomaly.module.posts::posts.index') }}">Posts</a>
+        </li>
+        <li>
+            {% if auth_check() %}
+                <a href="{{ url_route('anomaly.module.users::logout') }}">Logout</a>
+            {% else %}
+                <a href="{{ url_route('anomaly.module.users::login') }}">Login</a>
+            {% endif %}
+        </li>
+    </ul>
+
+</nav>

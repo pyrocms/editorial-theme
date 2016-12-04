@@ -1,0 +1,18 @@
+<!-- Sidebar -->
+<div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form method="post" action="#">
+                <input type="text" name="query" id="query" placeholder="Search"/>
+            </form>
+        </section>
+
+        {% include "theme::sidebar/menu" %}
+        {% include "theme::sidebar/posts" %}
+        {% include "theme::sidebar/contact" %}
+        {% include "theme::sidebar/footer" %}
+
+    </div>
+</div>
